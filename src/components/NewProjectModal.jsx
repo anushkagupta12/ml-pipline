@@ -9,15 +9,12 @@ const NewProjectModal = ({ isOpen, onClose }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!projectName.trim()) return;
-
     console.log("Project Created:", { projectName, selectedPipeline });
-
-    // Reset form and close modal
     setProjectName("");
     setSelectedPipeline("TDM (Tabular Data Manager)");
     onClose();
 
-    // Navigate to project setup page
+  
     navigate("/pipeline-setup");
   };
 

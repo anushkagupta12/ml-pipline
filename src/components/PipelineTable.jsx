@@ -15,7 +15,7 @@ const PipelineTable = () => {
 
   return (
     <div className="rounded-lg border bg-card text-card-foreground shadow-sm">
-      {/* Header */}
+      
       <div className="flex flex-col space-y-1.5 p-6">
         <div className="flex justify-between items-center mb-4">
           <div>
@@ -35,7 +35,6 @@ const PipelineTable = () => {
         </div>
       </div>
 
-      {/* Filter Bar */}
       <div className="p-6 pt-0">
         <div className="flex gap-4 mb-6">
           <div className="flex items-center gap-2">
@@ -44,7 +43,7 @@ const PipelineTable = () => {
           </div>
         </div>
 
-        {/* Table */}
+        
         <div className="overflow-x-auto border border-gray-200 rounded-md shadow-sm">
           <table className="min-w-full text-sm text-left text-gray-600">
             <thead className="border-b">
@@ -66,7 +65,7 @@ const PipelineTable = () => {
         </div>
       </div>
 
-      {/* Modal */}
+      
       <NewProjectModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </div>
   );

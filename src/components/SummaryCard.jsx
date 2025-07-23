@@ -1,6 +1,6 @@
 const SummaryCard = ({ title, value, color }) => {
   return (
-    // <div className="bg-white p-4 rounded shadow w-full sm:w-auto">
+    
     <div className="rounded-lg border bg-card text-card-foreground shadow-2xs">
     <div className="flex flex-col space-y-1.5 p-6 pb-3">
       <h3 className="text-lg font-semibold tracking-tight text-gray-600">{title}</h3>
